@@ -8,7 +8,7 @@ import '../view/screens/splash_screen.dart';
 
 class Routes {
   static String splash = '/';
-  static String login = '/login';
+  static String signup = '/signup';
   static String home = '/home';
   static String details = '/details';
   static String add = '/add';
@@ -21,8 +21,8 @@ class AppPages {
       page: () => SplashScreen(),
     ),
     GetPage(
-      name: Routes.login,
-      page: () => LoginScreen(),
+      name: Routes.signup,
+      page: () => SignupPage(),
     ),
     GetPage(
       name: Routes.home,

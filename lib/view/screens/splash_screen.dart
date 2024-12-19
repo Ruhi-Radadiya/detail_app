@@ -5,8 +5,6 @@ import 'package:get/get.dart';
 import 'dart:async';
 import '../../controller/auth_controller.dart';
 import '../../routes/routes.dart';
-import 'package:get/get.dart';
-import 'login_page.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -61,7 +59,7 @@ class _SplashScreenState extends State<SplashScreen>
       if (authController.isLoggedIn.value) {
         Get.offNamed(Routes.home);
       } else {
-        Get.offNamed(Routes.login);
+        Get.offNamed(Routes.signup);
       }
     });
     return Scaffold(
@@ -112,10 +110,6 @@ class _SplashScreenState extends State<SplashScreen>
                 ),
               ),
             ),
-
-            // Obx(
-            //   () => Text(authController.isLoggedIn.value.toString()),
-            // )
           ],
         ),
       ),

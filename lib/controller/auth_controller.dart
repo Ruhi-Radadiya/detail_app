@@ -41,6 +41,6 @@ class AuthController extends GetxController {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.clear();
     isLoggedIn.value = false;
-    Get.offAllNamed(Routes.login);
+    Get.offAllNamed(Routes.signup);
   }
 }

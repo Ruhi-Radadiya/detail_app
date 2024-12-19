@@ -6,12 +6,12 @@ import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../controller/auth_controller.dart';
 
-class LoginScreen extends StatefulWidget {
+class SignupPage extends StatefulWidget {
   @override
-  _LoginScreenState createState() => _LoginScreenState();
+  _SignupPageState createState() => _SignupPageState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _SignupPageState extends State<SignupPage> {
   AuthController authController = Get.put(AuthController());
   TextEditingController nameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
@@ -253,7 +253,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ElevatedButton(
               onPressed: login,
               child: Text(
-                'Login',
+                'Sign Up',
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,

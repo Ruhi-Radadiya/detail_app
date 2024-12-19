@@ -98,7 +98,7 @@ class _HomeScreenState extends State<HomeScreen> {
               title: Text('Logout'),
               onTap: () {
                 authController.logout();
-                Get.offNamed(Routes.login);
+                    Get.offNamed(Routes.signup);
               },
             ),
             Padding(
