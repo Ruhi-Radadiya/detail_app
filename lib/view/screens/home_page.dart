@@ -63,14 +63,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.lock),
-              title: Text(authController.password.value),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 18.0, right: 18.0),
-              child: Divider(),
-            ),
-            ListTile(
               leading: Icon(Icons.add),
               title: Text('Add Details'),
               onTap: () {
@@ -98,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
               title: Text('Logout'),
               onTap: () {
                 authController.logout();
-                    Get.offNamed(Routes.signup);
+                Get.offNamed(Routes.signup);
               },
             ),
             Padding(

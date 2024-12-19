@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import '../view/screens/add_detail.dart';
 import '../view/screens/detail_page.dart';
 import '../view/screens/home_page.dart';
-import '../view/screens/login_page.dart';
+import '../view/screens/Sign_up.dart';
 import '../view/screens/splash_screen.dart';
 
 class Routes {
